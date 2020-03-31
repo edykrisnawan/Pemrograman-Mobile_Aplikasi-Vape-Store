@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 //import  halaman  yang  akan  diload  kemudian  beri  alias
 import './beranda.dart' as beranda;
 import './listproduk.dart' as listproduk;
-import 'package:carousel_pro/carousel_pro.dart';
+// import './detail_produk.dart' as detail_produk;
+// import 'package:carousel_pro/carousel_pro.dart';
 
 //Top  Level/Root
 void main() {

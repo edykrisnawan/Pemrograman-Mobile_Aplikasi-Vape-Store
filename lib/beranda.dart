@@ -16,7 +16,7 @@ class _BerandaState extends State<Beranda> {
           title: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text('VAPOR STORES IND'),
+                Text('THE VAPE STORE_IND'),
               ]),
           actions: <Widget>[
             IconButton(
@@ -26,9 +26,9 @@ class _BerandaState extends State<Beranda> {
               },
             ),
             IconButton(
-              icon: Icon(Icons.notifications_active),
+              icon: Icon(Icons.add_shopping_cart),
               onPressed: () {
-                print('Click  start');
+                print('Click  Shop');
               },
             ),
           ],
@@ -138,6 +138,40 @@ class _BerandaState extends State<Beranda> {
                 // dotBgColor: Colors.yellowAccent,
               ),
             ),
+            Container(
+              color: Colors.blueAccent[100],
+              padding: const EdgeInsets.all(10),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'THE VAPE STORE_IND',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20),
+                        ),
+                        Text(
+                          ' ',
+                          style: TextStyle(
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.red[500],
+                  ),
+                  Text(
+                    '215',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
@@ -151,6 +185,24 @@ class _BerandaState extends State<Beranda> {
                       margin: const EdgeInsets.only(top: 8),
                       child: Text(
                         "CALL",
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Icon(Icons.chat, color: Colors.blue),
+                    Container(
+                      margin: const EdgeInsets.only(top: 8),
+                      child: Text(
+                        "CHAT",
                         style: TextStyle(
                           fontSize: 12,
                           fontWeight: FontWeight.w400,
@@ -201,13 +253,28 @@ class _BerandaState extends State<Beranda> {
             Container(
               padding: EdgeInsets.all(10),
               child: Text(
-                'Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
-                'Alps. Situated 1,578 meters above sea level, it is one of the '
-                'larger Alpine Lakes. A gondola ride from Kandersteg, followed by a '
-                'half-hour walk through pastures and pine forest, leads you to the '
-                'lake, which warms to 20 degrees Celsius in the summer. Activities '
-                'enjoyed here include rowing, and riding the summer toboggan run.',
+                'Alamat      : Jln. Seririt-Singaraja, Kalianget, Seririt, Kab. Buleleng.\n\n'
+                'Jam Buka : 09.00 - 22.00 WITA\n\n'
+                'Telepon     : 085857209987\n\n'
+                'Instagram : thevapestore_ind',
+                style: TextStyle(fontWeight: FontWeight.bold),
                 softWrap: true,
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(10),
+              child: TextField(
+                decoration: new InputDecoration(
+                  hintText: "Tulis Masukkan Anda...",
+                  labelText: "Masukkan",
+                  border: OutlineInputBorder(gapPadding: 2),
+                  fillColor: Colors.grey[100],
+                  filled: true,
+                  suffixIcon: Icon(
+                    Icons.send,
+                    color: Colors.black,
+                  ),
+                ),
               ),
             )
           ],
