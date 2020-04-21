@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 //import  halaman  yang  akan  diload  kemudian  beri  alias
 import './beranda.dart' as beranda;
 import './listproduk.dart' as listproduk;
+import 'ui/home.dart' as crud;
 // import './detail_produk.dart' as detail_produk;
 // import 'package:carousel_pro/carousel_pro.dart';
 
@@ -52,6 +53,7 @@ class _MyAppState extends State<MyApp> {
 //pemanggilan  halaman  dimulai  dari  alias.className  halaman  yang  diload
             new beranda.Beranda(),
             new listproduk.ListProduk(),
+            new crud.Home(),
           ],
         ),
 //membuat  bottom  tab
@@ -71,8 +73,8 @@ class _MyAppState extends State<MyApp> {
                   icon: Icon(Icons.home), title: Text("Beranda")),
               BottomNavigationBarItem(
                   icon: Icon(Icons.list), title: Text("List Produk")),
-              // BottomNavigationBarItem(
-              //     icon: Icon(Icons.account_circle), title: Text("Akun")),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.shop), title: Text("Transaksi")),
             ]));
   }
 }

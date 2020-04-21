@@ -25,12 +25,12 @@ class _BerandaState extends State<Beranda> {
                 print('Click  search');
               },
             ),
-            IconButton(
-              icon: Icon(Icons.add_shopping_cart),
-              onPressed: () {
-                print('Click  Shop');
-              },
-            ),
+            // IconButton(
+            //   icon: Icon(Icons.add_shopping_cart),
+            //   onPressed: () {
+            //     print('Click  Shop');
+            //   },
+            // ),
           ],
         ),
 
