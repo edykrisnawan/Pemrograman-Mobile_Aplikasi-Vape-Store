@@ -261,22 +261,22 @@ class _BerandaState extends State<Beranda> {
                 softWrap: true,
               ),
             ),
-            Container(
-              padding: EdgeInsets.all(10),
-              child: TextField(
-                decoration: new InputDecoration(
-                  hintText: "Tulis Masukkan Anda...",
-                  labelText: "Masukkan",
-                  border: OutlineInputBorder(gapPadding: 2),
-                  fillColor: Colors.grey[100],
-                  filled: true,
-                  suffixIcon: Icon(
-                    Icons.send,
-                    color: Colors.black,
-                  ),
-                ),
-              ),
-            )
+            // Container(
+            //   padding: EdgeInsets.all(10),
+            //   child: TextField(
+            //     decoration: new InputDecoration(
+            //       hintText: "Tulis Masukkan Anda...",
+            //       labelText: "Masukkan",
+            //       border: OutlineInputBorder(gapPadding: 2),
+            //       fillColor: Colors.grey[100],
+            //       filled: true,
+            //       suffixIcon: Icon(
+            //         Icons.send,
+            //         color: Colors.black,
+            //       ),
+            //     ),
+            //   ),
+            // )
           ],
 //seluruh  body  dibungkus  column
 //Tidak  terdapat  perubahan  pada  body  beranda.dart  latihan  4  /tugas  4  sebelumnya body:  new  ListView()

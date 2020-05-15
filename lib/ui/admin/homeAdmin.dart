@@ -1,13 +1,10 @@
 import 'dart:convert';
-import 'package:edy_project/ui/detail.dart';
-import 'package:edy_project/ui/editData.dart';
-import 'package:edy_project/ui/inputData.dart';
+import 'package:edy_project/ui/admin/detail.dart';
+import 'package:edy_project/ui/admin/inputData.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
-import 'package:edy_project/ui/detail.dart';
-//pastikan sudah ditambahkan pada pubspec.yaml
 
 class Home extends StatefulWidget {
   @override
@@ -38,7 +35,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
-        title: Text("Penjualan Vape Dan Liquid"),
+        title: Text("Input Data Vape Dan Liquid"),
       ),
 //menampilkan data dalam fungsi createListView
 //sama seperti pada modul 2

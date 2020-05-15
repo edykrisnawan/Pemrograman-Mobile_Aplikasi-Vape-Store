@@ -1,11 +1,8 @@
-import 'package:edy_project/main.dart';
-import 'package:edy_project/ui/inputData.dart';
 import 'package:flutter/material.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:intl/intl.dart';
 import 'package:http/http.dart' as http;
-import './home.dart';
 
 class EditData extends StatefulWidget {
   final List list;

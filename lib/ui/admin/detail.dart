@@ -1,12 +1,12 @@
+import 'package:edy_project/ui/admin/homeAdmin.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import './editData.dart';
 import 'package:http/http.dart' as http;
-import 'home.dart';
 
 class Detail extends StatefulWidget {
-  List list;
-  int index;
+  final List list;
+  final int index;
   Detail({this.index, this.list});
   @override
   _DetailState createState() => _DetailState();
