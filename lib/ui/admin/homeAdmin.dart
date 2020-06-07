@@ -76,6 +76,9 @@ class _HomeState extends State<Home> {
                   elevation: 2.0,
 //anggota list
                   child: ListTile(
+                    leading: penjualanList[index]['image'] == null
+                        ? SizedBox()
+                        : Image.network(""),
                     title: Text(
                       penjualanList[index]['nama'],
                       style: textStyle,

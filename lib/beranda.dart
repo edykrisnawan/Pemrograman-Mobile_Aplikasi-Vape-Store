@@ -1,5 +1,6 @@
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class Beranda extends StatefulWidget {
   @override
@@ -44,11 +45,11 @@ class _BerandaState extends State<Beranda> {
 //Drawer  Header  diisi  dengan  informasi  akun
                 new UserAccountsDrawerHeader(
                   accountName: new Text(
-                    "Edy Totoy",
+                    "Krisnawan",
                     style: TextStyle(color: Colors.black87),
                   ),
                   accountEmail: new Text(
-                    "edy@undiksha.ac.id",
+                    "krisnawan@gmail.com",
                     style: TextStyle(color: Colors.black87),
                   ),
                   currentAccountPicture: new GestureDetector(
@@ -56,13 +57,13 @@ class _BerandaState extends State<Beranda> {
                     child: new CircleAvatar(
 //mengambil  gambar  dari  internet  menggunakan  NetworkImage
                       backgroundImage:
-                          new AssetImage('assets/appimages/edy.JPG'),
+                          new AssetImage('assets/appimages/user.png'),
                     ),
                   ),
 //memberi  background  pada  Drawer  Header
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/appimages/bg_profile.jpg'),
+                        image: AssetImage('assets/appimages/bg_profile2.jpg'),
                         fit: BoxFit.cover),
                   ),
                 ),
@@ -87,16 +88,16 @@ class _BerandaState extends State<Beranda> {
                     color: Colors.white,
                   ),
                 ),
-                new ListTile(
-                  title: new Text(
-                    'Akun',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  trailing: new Icon(
-                    Icons.verified_user,
-                    color: Colors.white,
-                  ),
-                ),
+                // new ListTile(
+                //   title: new Text(
+                //     'Akun',
+                //     style: TextStyle(color: Colors.white),
+                //   ),
+                //   trailing: new Icon(
+                //     Icons.verified_user,
+                //     color: Colors.white,
+                //   ),
+                // ),
 //Divider  Menu
                 Divider(
                   height: 2,
@@ -110,6 +111,27 @@ class _BerandaState extends State<Beranda> {
                     Icons.settings,
                     color: Colors.white,
                   ),
+                ),
+                new ListTile(
+                  title: new Text(
+                    'Logout',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  trailing: new Icon(
+                    Icons.exit_to_app,
+                    color: Colors.white,
+                  ),
+                  onTap: () {
+                    Navigator.of(context).pushReplacementNamed('/login');
+                    Fluttertoast.showToast(
+                        msg: "Anda Telah Logout",
+                        toastLength: Toast.LENGTH_SHORT,
+                        gravity: ToastGravity.CENTER,
+                        timeInSecForIosWeb: 1,
+                        backgroundColor: Colors.blue,
+                        textColor: Colors.white,
+                        fontSize: 16.0);
+                  },
                 ),
               ],
             ),
@@ -253,6 +275,9 @@ class _BerandaState extends State<Beranda> {
             Container(
               padding: EdgeInsets.all(10),
               child: Text(
+                '       THE VAPE STORE_IND berdiri sejak 2 tahun lalu. Vape store ini sudah dikenal banyak orang dan memiliki cabang di seluruh Indonesia.\n\n'
+                '       THE VAPE STORE_IND telah menjadi salah satu vape store yang paling sering dikunjungi untuk memenuhi kebutuhan Vaporizer customer\n\n'
+                '       Jangan Ragu Datang ke Vape Store Kami, termurah, terlengkap dan dijamin OK!.. Langsung saja datang ke alamat dibawah ini, dan pantau Instagram kami untuk melihat stok barang terbaru kami. \n\n'
                 'Alamat      : Jln. Seririt-Singaraja, Kalianget, Seririt, Kab. Buleleng.\n\n'
                 'Jam Buka : 09.00 - 22.00 WITA\n\n'
                 'Telepon     : 085857209987\n\n'

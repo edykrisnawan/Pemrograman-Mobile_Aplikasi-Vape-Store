@@ -1,4 +1,4 @@
-import 'package:edy_project/beranda.dart';
+import 'package:edy_project/beranda_admin.dart';
 import 'package:edy_project/listproduk.dart';
 import 'package:edy_project/ui/admin/homeAdmin.dart';
 import 'package:flutter/material.dart';
@@ -38,7 +38,7 @@ class _MyAppAdminState extends State<MyAppAdmin> {
           controller: controller,
           children: <Widget>[
 //pemanggilan  halaman  dimulai  dari  alias.className  halaman  yang  diload
-            new Beranda(),
+            new BerandaAdmin(),
             new ListProduk(),
             new Home(),
           ],

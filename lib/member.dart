@@ -5,8 +5,6 @@ import 'package:edy_project/ui/admin/mainAdmin.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'ui/user/homeUser.dart';
-
 class Member extends StatefulWidget {
   @override
   _MemberState createState() => _MemberState();
@@ -58,7 +56,6 @@ class _MemberState extends State<Member> with SingleTickerProviderStateMixin {
             children: <Widget>[
               new Beranda(),
               new ListProduk(),
-              new Home(),
             ],
           ),
           bottomNavigationBar: new Material(

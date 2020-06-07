@@ -8,6 +8,7 @@ import 'ui/user/mainUser.dart';
 void main() {
 //harus  menggunakan  MaterialApp
   runApp(new MaterialApp(
+    debugShowCheckedModeBanner: false,
     title: "tab  Bar",
     initialRoute: "/login",
     routes: {
