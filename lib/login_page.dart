@@ -4,6 +4,7 @@ import 'package:edy_project/member.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:async';
+import 'register.dart';
 
 class LoginPage extends StatefulWidget {
   static String tag = 'login-page';
@@ -106,7 +107,7 @@ class _LoginPageState extends State<LoginPage> {
         ),
         padding: EdgeInsets.all(18),
         color: Colors.green,
-        child: Text('Log In',
+        child: Text('LOGIN',
             style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
@@ -131,6 +132,38 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
 
+    final registerButton = Padding(
+      padding: EdgeInsets.symmetric(vertical: 16.0),
+      child: RaisedButton(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(24),
+        ),
+        padding: EdgeInsets.all(18),
+        color: Colors.green,
+        child: Text('REGISTER',
+            style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 20)),
+        onPressed: () {
+          Navigator.of(context).push(new MaterialPageRoute(
+            builder: (BuildContext context) => Register(),
+          ));
+        },
+      ),
+    );
+
+    // Padding(padding: EdgeInsets.all(10.0));
+    // new RaisedButton(
+    //   child: new Row(
+    //     mainAxisAlignment: MainAxisAlignment.center,
+    //     children: <Widget>[new Text("Register")],
+    //   ),
+    //   color: Colors.lightBlue,
+    //   splashColor: Colors.blueGrey,
+
+    // );
+
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
@@ -144,6 +177,8 @@ class _LoginPageState extends State<LoginPage> {
             password,
             SizedBox(height: 24.0),
             loginButton,
+            SizedBox(height: 15.0),
+            registerButton,
           ],
         ),
       ),
